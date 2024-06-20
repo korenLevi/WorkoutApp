@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/firstNameFragment">
+    <fragment
+        android:id="@+id/firstNameFragment"
+        android:name="com.krs.workoutsapp.register_fragments.FirstNameFragment"
+        android:label="register_first_name_layout"
+        tools:layout="@layout/register_first_name_layout" >
+        <action
+            android:id="@+id/action_firstNameFragment_to_lastNameFragment2"
+            app:destination="@id/lastNameFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/lastNameFragment2"
+        android:name="com.krs.workoutsapp.register_fragments.LastNameFragment"
+        android:label="register_last_name_layout"
+        tools:layout="@layout/register_last_name_layout" >
+        <action
+            android:id="@+id/action_lastNameFragment2_to_birthdayFragment"
+            app:destination="@id/birthdayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/birthdayFragment"
+        android:name="com.krs.workoutsapp.register_fragments.BirthdayFragment"
+        android:label="register_birthday_layout"
+        tools:layout="@layout/register_birthday_layout" >
+        <action
+            android:id="@+id/action_birthdayFragment_to_genderFragment"
+            app:destination="@id/genderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/genderFragment"
+        android:name="com.krs.workoutsapp.register_fragments.GenderFragment"
+        android:label="register_gender_layout"
+        tools:layout="@layout/register_gender_layout" >
+        <action
+            android:id="@+id/action_genderFragment_to_unitSystemFragment"
+            app:destination="@id/unitSystemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/unitSystemFragment"
+        android:name="com.krs.workoutsapp.register_fragments.UnitSystemFragment"
+        android:label="register_unit_system_layout"
+        tools:layout="@layout/register_unit_system_layout" >
+        <action
+            android:id="@+id/action_unitSystemFragment_to_heightFragment"
+            app:destination="@id/heightFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/heightFragment"
+        android:name="com.krs.workoutsapp.register_fragments.HeightFragment"
+        android:label="register_height_layout"
+        tools:layout="@layout/register_height_layout" >
+        <action
+            android:id="@+id/action_heightFragment_to_weightFragment"
+            app:destination="@id/weightFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weightFragment"
+        android:name="com.krs.workoutsapp.register_fragments.WeightFragment"
+        android:label="register_weight_layout"
+        tools:layout="@layout/register_weight_layout" >
+        <action
+            android:id="@+id/action_weightFragment_to_enableNotificationFragment"
+            app:destination="@id/enableNotificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/enableNotificationFragment"
+        android:name="com.krs.workoutsapp.register_fragments.EnableNotificationFragment"
+        android:label="register_enable_notifications_layout"
+        tools:layout="@layout/register_enable_notifications_layout" >
+        <action
+            android:id="@+id/action_enableNotificationFragment_to_googleFitSyncFragment"
+            app:destination="@id/googleFitSyncFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/googleFitSyncFragment"
+        android:name="com.krs.workoutsapp.register_fragments.GoogleFitSyncFragment"
+        android:label="register_sync_google_fit_layout"
+        tools:layout="@layout/register_sync_google_fit_layout" >
+        <action
+            android:id="@+id/action_googleFitSyncFragment_to_profilePhotoFragment"
+            app:destination="@id/profilePhotoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilePhotoFragment"
+        android:name="com.krs.workoutsapp.register_fragments.ProfilePhotoFragment"
+        android:label="register_profile_photo_layout"
+        tools:layout="@layout/register_profile_photo_layout" >
+        <action
+            android:id="@+id/action_profilePhotoFragment_to_howDidYouHearFragment"
+            app:destination="@id/howDidYouHearFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/howDidYouHearFragment"
+        android:name="com.krs.workoutsapp.register_fragments.HowDidYouHearFragment"
+        android:label="register_how_did_you_hear_about_us_layout"
+        tools:layout="@layout/register_how_did_you_hear_about_us_layout" >
+        <action
+            android:id="@+id/action_howDidYouHearFragment_to_profileIsCompleteFragment"
+            app:destination="@id/profileIsCompleteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileIsCompleteFragment"
+        android:name="com.krs.workoutsapp.register_fragments.ProfileIsCompleteFragment"
+        android:label="register_profile_is_complete_layout"
+        tools:layout="@layout/register_profile_is_complete_layout" >
+        <action
+            android:id="@+id/action_profileIsCompleteFragment_to_meetCaliberFragment"
+            app:destination="@id/meetCaliberFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/meetCaliberFragment"
+        android:name="com.krs.workoutsapp.register_fragments.MeetCaliberFragment"
+        android:label="meet_caliber_layout"
+        tools:layout="@layout/meet_caliber_layout" >
+        <action
+            android:id="@+id/action_meetCaliberFragment_to_ourMethodFragment"
+            app:destination="@id/ourMethodFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ourMethodFragment"
+        android:name="com.krs.workoutsapp.register_fragments.OurMethodFragment"
+        android:label="our_method_layout"
+        tools:layout="@layout/our_method_layout" >
+        <action
+            android:id="@+id/action_ourMethodFragment_to_progressFragment"
+            app:destination="@id/progressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/progressFragment"
+        android:name="com.krs.workoutsapp.register_fragments.ProgressFragment"
+        android:label="progress_layout"
+        tools:layout="@layout/progress_layout" >
+        <action
+            android:id="@+id/action_progressFragment_to_ourPrinciplesFragment"
+            app:destination="@id/ourPrinciplesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ourPrinciplesFragment"
+        android:name="com.krs.workoutsapp.register_fragments.OurPrinciplesFragment"
+        android:label="our_principles_layout"
+        tools:layout="@layout/our_principles_layout" >
+        <action
+            android:id="@+id/action_ourPrinciplesFragment_to_niceToMeetYouFragment"
+            app:destination="@id/niceToMeetYouFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/niceToMeetYouFragment"
+        android:name="com.krs.workoutsapp.register_fragments.NiceToMeetYouFragment"
+        android:label="nice_to_meet_you_layout"
+        tools:layout="@layout/nice_to_meet_you_layout" >
+        <action
+            android:id="@+id/action_niceToMeetYouFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.krs.workoutsapp.register_fragments.WelcomeFragment"
+        android:label="welcome_layout"
+        tools:layout="@layout/welcome_layout" />
+</navigation>
